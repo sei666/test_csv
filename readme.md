@@ -4,8 +4,10 @@
 ### Install venv
 `python -m venv env`
 ### Run venv
-`source env/bin/activate #Linux`
-`.\venv\Scripts\activate #Windows`
+#### For Linux
+`source env/bin/activate`
+#### For Windows
+`.\venv\Scripts\activate`
 ### Install requirements
 `pip install -r requirements.txt`
 ### Add 50 archives
