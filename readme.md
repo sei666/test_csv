@@ -4,13 +4,13 @@
 ### Install venv
 `python -m venv env`
 ### Run venv
-#### For Linux
+##### For Linux
 `source env/bin/activate`
-#### For Windows
+##### For Windows
 `.\venv\Scripts\activate`
 ### Install requirements
 `pip install -r requirements.txt`
 ### Add 50 archives
 `python generator_archives.py`
-#### Process archives and get csv
+### Process archives and get csv
 `python multi_csv_archive_handler.py`
