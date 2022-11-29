@@ -25,7 +25,6 @@ def generate_xml():
                                         name=uuid.uuid4().hex)
     root.append(objects_tag)
 
-    # pretty string
     s = etree.tostring(root, pretty_print=True)
     return s
 
