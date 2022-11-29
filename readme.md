@@ -7,7 +7,7 @@
 ##### For Linux
 `source env/bin/activate`
 ##### For Windows
-`.\venv\Scripts\activate`
+`.\env\Scripts\activate`
 ### Install requirements
 `pip install -r requirements.txt`
 ### Add 50 archives
