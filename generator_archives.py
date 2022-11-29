@@ -5,16 +5,6 @@ import zipfile
 import os
 from random import randint
 
-# <root>
-#     <var name=’id’ value=’<случайное уникальное строковое значение>’/>
-#     <var name=’level’ value=’<случайное число от 1 до 100>’/>
-        # <objects>
-        #     <object name=’<случайное строковое значение>’/>
-        #     <object name=’<случайное строковое значение>’/>
-        #     …
-        # </objects>
-# </root>
-
 def generate_xml():
     root = etree.Element('root')
 
@@ -44,12 +34,12 @@ def create_zip(name):
     zf = zipfile.ZipFile(os.path.join(PROJ_DIR, "%s.zip" % name), "w",
                          zipfile.ZIP_DEFLATED)
     for i in range(100):
-        zf.writestr(f'/file{i+1}.xml', generate_xml())
+        zf.writestr(f'file{i+1}.xml', generate_xml())
     zf.close()
 
 
 PROJ_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'archives')
 
-for j in range(1):
+for j in range(50):
     create_zip(j+1)
 
