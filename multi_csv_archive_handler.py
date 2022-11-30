@@ -4,8 +4,6 @@ import zipfile
 import csv
 import time
 import os
-from os import listdir
-from os.path import isfile, join
 
 def mp_worker(big_filename):
     head_tail = os.path.split(big_filename)
